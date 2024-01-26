@@ -1,0 +1,56 @@
+.card{
+    width: 240px;
+    height: 254px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    margin: 50px;
+    border-radius: 15px;
+}
+.card::before{
+    content: "";
+    width: 100px;
+    height: 160%;
+    background-image: linear-gradient(140deg, red, pink);
+    position: absolute;
+    left: 25px;
+    bottom: -75px;
+    border-radius: 15px;
+    animation: rotspin 2s linear infinite;
+
+}
+
+@keyframes rotspin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background-color: rgb(27, 75, 131);
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
